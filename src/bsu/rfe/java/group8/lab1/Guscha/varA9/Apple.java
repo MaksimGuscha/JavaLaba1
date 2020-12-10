@@ -7,6 +7,9 @@ public class Apple extends Food {
         this.size = size;
     }
     @Override
+    public String toString (){
+        return super.toString() + " размера '" + size +"'";
+    }
     public void consume() {
         System.out.println(this + " " + "съедено");
     }
@@ -16,9 +19,7 @@ public class Apple extends Food {
     public String getSize() {
         return size;
     }
-    public String toString (){
-        return super.toString() + " размера '" + size +"'";
-    }
+
     public boolean equals(Object args) {
         if (super.equals(args)) {
             if (!(args instanceof Apple)) return false;
