@@ -7,13 +7,11 @@ public class Eggs extends Food {
         super("Eggs");
         this.number = number;
     }
-    @Override
-    public void consume(){
-        System.out.println(this + " съедено");
-    }
     public String toString (){
         return super.toString() + " в количестве '" + number + "'";
     }
+    @Override
+    public void consume(){ System.out.println(this + " съедено"); }
     public String getNumber() {
         return number;
     }
